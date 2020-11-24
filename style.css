@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    font-weight: normal;
+    font-style: normal;
+    src: url('TTLakesCompressed-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/TTLakesCompressed-Regular.woff') format('woff'),
+         url('/fonts/TTLakesCompressed-Regular.woff') format('truetype');
+         font-weight: 500;
+        font-style: normal;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "TT Lakes Compressed",  sans-serif;
+    min-width: 320px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.upper-menu {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(65, 246, 215);
+}
+
+button {
+    border: none;
+    background-color: inherit; 
+    padding: 0; 
+    border-radius: 50%;
+    border-color: white;
+    outline-color: rgb(255,62,121);
+}
+
+.upper-menu__menu-button {
+    margin: 24px 16.73px 24px 16px;
+}
+
+.upper-menu__contact-button,
+.upper-menu__divider-before-img {
+display: none;
+}
+
+.upper-menu__button {
+    display: flex;
+    margin: 24px 16px 24px 20px;
+    
+}
+
+.upper-menu__repair-button-img {
+    margin-right: 16px;
+}
+
+.upper-menu__logo {
+    width: 96.55px;
+    height: 50.81px;
+    margin-right: 16.73px;
+}
+
+.upper-menu__contact-button {
+    margin-right: 20px;
+}
+
+.upper-menu__contact-button button:nth-child(1),
+.upper-menu__contact-button button:nth-child(2){
+    margin-right : 16px;
+}
+
+.main {
+    background-color: #F8F8F8;
+}
+
+h1 {
+    font-size: 28px;
+    margin:0;
+}
+
+.main__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main__header-name {
+  text-align: center;
+  margin: 24px 0 24px 16px;
+    
+}
+
+.main__header-button {
+    display: flex;
+    display: none; 
+}
+
+.button-img-text1 {
+    margin-right: 32px;
+}
+
+.button-img-text1,
+.button-img-text2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 16px;
+}
+
+.nav__link {
+    display: none;
+}
+
+.nav__section {
+    white-space:nowrap;
+    padding: 12px 0px 12px 0;
+    margin-right: 20px;
+    
+}
+
+.nav__link:checked + .name__section {
+    border: 2px solid rgb(65, 246, 215); 
+    border-radius: 10px;
+}
+
+.name__section {
+    padding:6px 0px 6px 0px;
+    letter-spacing: 2px;
+}
+
+.info__nameplate-img {
+width: 320px;
+height: 176px;
+margin-top: 27.5px;
+margin-bottom: 27.5px;
+}
+
+.info__text p:nth-child(2),
+.info__text p:nth-child(3){
+    display: none;
+}
+
+.info__text {
+    margin: 0 0 16px 16px;
+    width: 288px;
+}
+
+.button-img-arrow {
+    margin-right: 16px;
+    margin-left: 16px
+}
+
+.information_section {
+    display: flex;
+    flex-direction: column; 
+}
+
+.nav label:nth-child(1) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .upper-menu__contact-button {
+    display: block;
+    }
+
+    .upper-menu__divider-before-img {
+    display: block;
+    }
+
+    .upper-menu__menu-button {
+        margin-right: 20px;
+        margin-left: 24px;
+    }
+
+    .upper-menu__logo {
+        margin-right: 240.73px;
+        margin-left: 20px;
+    }
+
+    .main__header-name {
+        margin-left: 24px;
+    }  
+
+    .upper-menu__button {
+        margin-left: 20px;
+        margin-right: 24px;
+    }
+
+    .nav {
+        margin-left: 24px;
+    }   
+   
+   .info__text p:nth-child(2) {
+       display: block;
+   }
+    
+   .info__text {
+        width: 312px;
+        margin: 0 0 16px 24px;
+    }
+
+    .information_section {
+        flex-direction: row; 
+    }
+
+    .info__nameplate-img {
+        width: 360px;
+        height: 208px;
+    }
+    .info__button {
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    .info__img {
+        margin-left: 48px;
+    }
+    
+}
+
+@media (min-width: 1120px) {
+    .nav label:nth-child(1) {
+        display: block;
+    }
+    
+    .info__text p:nth-child(2){
+        display: none;
+    }
+    
+    .info__text p:nth-child(3){
+        display: block;
+    }
+    .main__header-name {
+        margin-left: 32px;
+    }
+    .header {
+        display: none;
+    }
+
+    .main__header-button {
+        display: flex;
+    }
+    .button-img-text1 {
+       margin-right: 32px; 
+    }
+    .name_bottom-text {
+        margin-right: 8px;
+    }
+    .info__nameplate-img {
+        width: 530px;
+        height: 307px;
+    }
+    .info__text {
+        width: 490px;
+        margin-left: 34px;
+    }
+    .main__header-name {
+        margin-right: 530px;
+        }
+   
+    .nav {
+        margin-left: 34px;
+    }
+    .info__button {
+        margin-left: 20px;
+    }
+    
+
+}
+
+
