@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('./fonts/TTLakes-Medium.eot');
     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-    url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/TTLakes-Medium.woff') format('woff'),
-    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-Medium.woff') format('woff'),
+    url('./fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -104,7 +104,7 @@ h1 {
 }
 
 h1:before {
-    content: url(../images/highlight.svg);
+    content: url(./images/highlight.svg);
     position: absolute;
     left: -12px;
 }
@@ -253,7 +253,7 @@ height: 176px;
         margin-bottom:32px;
     }  
     h1:before {
-        content: url(../images/highlight.svg);
+        content: url(./images/highlight.svg);
         position: absolute;
         left: -24px;
     }
@@ -351,7 +351,7 @@ height: 176px;
     } 
 
     h1:before {
-        content: url(../images/highlight.svg);
+        content: url(./images/highlight.svg);
         position: absolute;
         left: -32px;
     }
