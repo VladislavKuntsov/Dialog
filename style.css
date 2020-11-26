@@ -91,7 +91,7 @@ display: none;
 }
 
 .upper-menu__logo::after {
-    content: url(/images/divider.svg);
+    content: url(./images/divider.svg);
     position: absolute;
     left: 186px;
     top: 28px;
@@ -129,7 +129,7 @@ h1 {
 }
 
 h1:before {
-    content: url(/images/highlight.svg);
+    content: url(./images/highlight.svg);
     position: absolute;
     left: -12px;
 }
@@ -281,7 +281,7 @@ h1:before {
     }
     
     .upper-menu__logo::after {
-        content: url(/images/divider.svg);
+        content: url(./images/divider.svg);
         position: absolute;
         left: 84px;
         top: 28px;
@@ -292,7 +292,7 @@ h1:before {
         margin-right: 24px;
     }
     .upper-menu__button :after  {
-        content: url(/images/divider.svg);
+        content: url(./images/divider.svg);
         position: absolute;
         left: -20px;
         top: 4px;
@@ -303,7 +303,7 @@ h1:before {
         margin-bottom:32px;
     }  
     h1:before {
-        content: url(/images/highlight.svg);
+        content: url(./images/highlight.svg);
         position: absolute;
         left: -24px;
     }
@@ -380,7 +380,7 @@ h1:before {
     } 
 
     h1:before {
-        content: url(/images/highlight.svg);
+        content: url(./images/highlight.svg);
         position: absolute;
         left: -32px;
     }
