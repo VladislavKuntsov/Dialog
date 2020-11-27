@@ -90,7 +90,7 @@ display: none;
     flex-grow: 1;
 }
 
-.upper-menu__logo::after {
+.upper-menu::after {
     content: url(./images/divider.svg);
     position: absolute;
     left: 186px;
@@ -160,7 +160,8 @@ h1:before {
     align-items: center;
     margin-right: 32px;
     font-size: 16px; 
-    font-family: "TT Lakes" ;
+    font-family: "TT Lakes Regular" ;
+    font-weight: 600;
 }
 
 .navigation {
@@ -224,24 +225,26 @@ h1:before {
 .information__img {
     margin-top: 16px;
     margin-bottom: 16px;
-    max-width: 400px;
+    max-width: 360px;
 }
 
-.info__nameplate-img {
+.information__img-nameplate {
     width: 100%;
     height: auto;
 }
 
-.information_basic p:nth-child(2),
-.information_basic p:nth-child(3){
+.information-basic p:nth-child(2),
+.information-basic p:nth-child(3){
     display: none;
 }
 
-.information_basic {
+.information-basic {
     margin: 24px 16px 16px 16px;
     font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
     min-width: 288px;
-    max-width: 320px;
+    max-width: 312px;
     font-family: 'TT Lakes Regular';
 }
 
@@ -252,13 +255,19 @@ h1:before {
 .information__button {
     margin-left: 24px;
 }
+
 .information__button-img {
    font-size: 16px; 
+}
+.information__button-img::before {
+    content: url(/images/icon_arrow.svg);
+    margin-right: 16px;
 }
 
 .information {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row;
+    flex-wrap: wrap; 
 }
 
 .navigation label:nth-child(1) {
@@ -280,7 +289,7 @@ h1:before {
         margin-right: 0px;
     }
     
-    .upper-menu__logo::after {
+    .upper-menu::after {
         content: url(./images/divider.svg);
         position: absolute;
         left: 84px;
@@ -291,10 +300,10 @@ h1:before {
         margin-left: 20px;
         margin-right: 24px;
     }
-    .upper-menu__button :after  {
+    .upper-menu__button::before  {
         content: url(./images/divider.svg);
         position: absolute;
-        left: -20px;
+        right: 115px;
         top: 4px;
     }
 
@@ -316,18 +325,20 @@ h1:before {
         margin-left:24px;
      }  
    
-   .information_basic p:nth-child(2) {
+   .information-basic p:nth-child(2) {
        display: block;
    }
     
-   .information_basic { 
+   .information-basic { 
         margin: 0 0 16px 24px;
         min-width: 312px;
         max-width: 490px;
+        line-height: 20px;
     }
 
     .information {
-        flex-direction: row; 
+        flex-direction: row;
+        flex-wrap: nowrap;  
     }
     .information__img {
         margin-left: 48px;
@@ -336,7 +347,7 @@ h1:before {
         max-width: 531.35px;
         }
         
-    .info__nameplate-img {
+    .information__img-nameplate {
         width: 100%;
         height: auto;
     }
@@ -353,7 +364,7 @@ h1:before {
         margin-left:32px;
      }  
 
-    .information_basic p:nth-child(3){
+    .information-basic p:nth-child(3){
         display: block;
     }
 
@@ -376,7 +387,7 @@ h1:before {
     }
 
     h1 {
-        margin: 0px;  
+        margin: 0px;
     } 
 
     h1:before {
@@ -390,14 +401,20 @@ h1:before {
         margin-top: 50px;
     }
 
-    .info__nameplate-img {
+    .information__img-nameplate {
         width: 100%;
         height: auto;
     }
-    .information_basic {
+    .information-basic {
         width: 490px;
         margin-left: 34px;
+        line-height: 20px;
     }
+
+    .information-basic p:nth-child(2) {
+        display: none;
+    }
+
     .main__header-name {
         margin-right: 0;
         }
