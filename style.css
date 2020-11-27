@@ -260,7 +260,7 @@ h1:before {
    font-size: 16px; 
 }
 .information__button-img::before {
-    content: url(/images/icon_arrow.svg);
+    content: url(./images/icon_arrow.svg);
     margin-right: 16px;
 }
 
