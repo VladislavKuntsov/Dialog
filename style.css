@@ -33,7 +33,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: "TT Lakes" ;
+    font-family: "TT Lakes", 'TT Lakes Regular', 'TT Lakes Bold';
     color: #1B1C21;
 }
 
