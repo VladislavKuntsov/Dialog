@@ -136,7 +136,7 @@ h1:before {
 
 .main__header-name {
   text-align: center;
-  font-family: 'TT Lakes Bold';
+  font-family: 'TT Lakes';
   margin:0;
   flex-grow: 1;
 }
