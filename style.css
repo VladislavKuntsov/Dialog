@@ -33,7 +33,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'TT Lakes', 'TT Lakes Regular', 'TT Lakes Bold';
+    font-family: 'TT Lakes',  'sans-serif';
     color: #1B1C21;
 }
 
@@ -42,7 +42,6 @@ html {
 }
 
 body {
-    font-family: 'TT Lakes',  'sans-serif';
     min-width: 320px;
     max-width: 1120px;
     margin: auto;
