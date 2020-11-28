@@ -146,6 +146,7 @@ h1:before {
     display: none; 
     margin-right: 32px;
     font-size: 16px;
+    font-family: TT Lakes Regular;
 }
 
 .main__repair-button-img,
@@ -245,7 +246,7 @@ h1:before {
     letter-spacing: 0.2px;
     min-width: 288px;
     max-width: 312px;
-    font-family: 'TT Lakes Regular';
+    font-family: "TT Lakes Regular";
 }
 
 .button-img-arrow {
@@ -331,6 +332,7 @@ h1:before {
     
    .information-basic { 
         margin: 0 0 16px 24px;
+        font-family: TT Lakes Regular;
         min-width: 312px;
         max-width: 490px;
         line-height: 20px;
@@ -406,6 +408,7 @@ h1:before {
         height: auto;
     }
     .information-basic {
+        font-family: TT Lakes Regular;
         width: 490px;
         margin-left: 34px;
         line-height: 20px;
