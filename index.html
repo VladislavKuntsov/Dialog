@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <title>CPS</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-       <header class="upper-menu">
-                <div class="upper-menu__menu-button">
-                    <button ><img src="./images/burgermenu.svg" alt="menu" class="upper-menu__menu-button-img"></button>
-                </div> 
-                <div class="upper-menu__logo">  
-                    <img src="./images/logo.svg" alt="CPS" class="upper-menu__logo-img">
-                </div>
-                <div class="upper-menu__contact-button">
-                    <button><img src="./images/call.svg" alt="call" class="upper-menu__call-button-img"></button>
-                    <button><img src="./images/chat.svg" alt="chat" class="upper-menu__chat-button-img"></button>
-                    <button><img src="./images/profile.svg" alt="profile" class="upper-menu__profile-button-img"></button>
-                </div>
-                <div class="upper-menu__button">    
-                    <button><img src="./images/repair.svg" alt="repair" class="upper-menu__repair-button-img"></button>
-                    <button><img src="./images/checkstatus.svg" alt="checkstatus" class="upper-menu__checkstatus-button-img"></button>
-                </div>
-        </header>
-        <main class="main">
-            <div class="main__header">
-                <div class="main__header-name">
-                    <h1>Услуги и сервисы</h1>
-                </div>
-                <div class="main__header-button">
-                    <button class="main__header-button-repair">Оставить заявку<img src="./images/repair.svg" alt="Оставить заявку" class="main__repair-button-img"></button>
-                    <button class="main__header-button-checkstatus">Статус ремонта<img src="./images/checkstatus.svg" alt="Статус ремонта" class="main__checkstatus-button-img"></button>
-                </div>
+    <link rel="stylesheet" href="style.css">
+    <title>СPS</title>
+</head>
+<body>
+    <aside>
+        <div class="header">
+            <div class="header__burger">
+                <button><img class="header__burger-img" src="./images/burger.svg" alt="Меню"></button>
             </div>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="" class="navigation__link navigation__link--active">Ремонтируемые бренды</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Ремонтируемые устройства</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Цены на услуги</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Адреса сервисных центров</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Специальные цены</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Отзывы</a></li>
-                </ul>
-            </nav>
-            <div class="information">
-                <div class="information__container">
-                    <div class="information-basic">
-                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-                            что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и,
-                            в свою очередь, советуют нас родным и близким.</p>
-                    </div>
-                    <div class="information__button">
-                        <button class="information__button-img">Читать далее</button>
-                    </div>
-                </div>
-                <div>
-                    <div class="information__img">
-                        <img src="./images/CPGimg.jpg" alt="Изображение логотипа компании" class="information__img-nameplate">
-                    </div>
-                </div>    
-            </div> 
+            <div class="header__logo">
+                <img class="header__logo-img" src="./images/logo.svg" alt="Логотип">
+            </div>
+            <div class="header__search">
+                <button><img class="header__search-img" src="./images/search.svg" alt="Открыть поиск"></button>
+            </div>
+        </div>
+        <main>
+            <div class="title">
+                <h1>Ремонт техники</h1>
+            </div>
+            <ul class="navigator">
+                <li><a href="#">Услуги и сервисы</a></li>
+                <li><a href="#">Корпоративным клиентам</a></li>
+                <li><a href="#">Продавцам техники</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Производителям</a></li>
+                <li><a href="#">Наши сервисные центры</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
         </main>
-    </body>
+        <footer class="footer">
+            <div class="footer__contact-button">
+                <button><img class="footer__call-img" src="./images/call.svg" alt="Позвонить"></button>
+                <button><img class="footer__chat-img" src="./images/chat.svg" alt="Открыть чат"></button>
+                <button><img class="footer__profile-img" src="./images/profile.svg" alt="Открыть профиль"></button>
+            </div>
+            <div class="footer__contact-adress">
+                mail@cps.com
+            </div>
+            <div class="footer__contact-number">
+                8 800 890 8900
+            </div>
+            <div class="footer__language">
+                <button class="footer__language-RU">RU</button>
+                <button class="footer__language-EN">EN</button>
+                <button class="footer__language-CH">CH</button>
+            </div>
+        </footer>
+    </aside>
+</body>
 </html>
