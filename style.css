@@ -149,17 +149,28 @@ font-weight: 500;
 }
 
 .footer__contact-adress {
-    font-weight: 500;
-    height: 24px;
     margin-bottom:12px;
 }
 
+.footer__contact-adress a {
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    height: 24px;
+}
+
 .footer__contact-number {
+    margin-bottom:40px;
+}
+
+.footer__contact-number a{
+    text-decoration: none;
+    color:black;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.6px;
-    margin-bottom:40px;
+    
 }
 
 .footer__language button{
