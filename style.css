@@ -48,10 +48,15 @@ body {
 
 }
 
-aside {
+.aside-menu {
     width: 320px;
     background:#F8F8F8;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 button {
@@ -109,6 +114,9 @@ left:-24px;
 top:-4px;
 }
 
+.main {
+    flex-grow: 1;
+}
 .navigator {
     margin-left:24px;
     margin-top:32px;
@@ -136,7 +144,7 @@ font-weight: 500;
     display: flex;
     flex-direction:column;
     margin-left:24px;
-    margin-top:268px;
+    margin-top:40px;
 }
 
 .footer__contact-button {
@@ -150,20 +158,14 @@ font-weight: 500;
 
 .footer__contact-adress {
     margin-bottom:12px;
-}
-
-.footer__contact-adress a {
     text-decoration: none;
     color:black;
     font-weight: 500;
     height: 24px;
 }
 
-.footer__contact-number {
+.footer__contact-number{
     margin-bottom:40px;
-}
-
-.footer__contact-number a{
     text-decoration: none;
     color:black;
     font-weight: bold;
