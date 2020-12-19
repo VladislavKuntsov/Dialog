@@ -48,6 +48,7 @@ body {
     min-width: 320px;
     max-width: 1120px;
     overflow-x: hidden;
+    
 }
 
 .gradient {
@@ -147,6 +148,7 @@ margin-top: 24px;
     display: none;
 }
 
+
 .button-more,
 .button-less {
     position: relative;
@@ -156,7 +158,8 @@ margin-top: 24px;
     border-radius: 50%;
     border-color: white;
     outline: none;
-    font-family: 500;
+    font-family: 'TT Lakes';
+    font-weight: 500;
     line-height: 24px;
     margin-left: 57px;
     display: none;
