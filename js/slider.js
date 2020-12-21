@@ -1,9 +1,10 @@
-var slider = document.querySelector('.swiper-container');
-var mySwiper;
+const slider = document.querySelector('.swiper-container');
+ let mySwiper;
 
  function mobileSlider() {
     if (window.innerWidth < 768 && slider.dataset.mobile === 'false') {
-        mySwiper = new Swiper(slider, {
+        mySwiper = new Swiper('.swiper-container', {
+            loop: true,
             slidesPerView: 'auto',
             spaceBetween: 16,
             pagination: {
@@ -12,16 +13,17 @@ var mySwiper;
             }
         })
         slider.dataset.mobile = 'true';
-    }
-    if (window.innerWidth >= 768) {
+    } 
+
+     if (window.innerWidth >= 768) {
         slider.dataset.mobile = 'false';
-        mySwiper.destroy();   
-        if (slider.classList.contains('.swiper-container-initialized')) {
+           
+        if (slider.classList.contains('.swiper-container-initialized')) {  
             mySwiper.destroy();
         }
     }
 }
-    mobileSlider()
+    mobileSlider();
     window.addEventListener('resize', () => {
         mobileSlider();
         showLessMore();
@@ -37,7 +39,7 @@ var mySwiper;
             }
         }
         if(window.innerWidth >= 992) {
-            for(let i = 9; i < slides.length; i++) {
+            for(let i = 8; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
         }
@@ -45,14 +47,15 @@ var mySwiper;
 
     function showMore   () {
         if(window.innerWidth >= 768 && window.innerWidth < 992) {
-            for(let i = 7; i < slides .length; i++) {
+            for(let i = 0; i < slides .length; i++) {
                 slides[i].style.display = 'block';
                 
             }
         }
         if(window.innerWidth >= 992 ) {
-            for(let i = 9; i < slides.length; i++) {
+            for(let i = 0; i < slides.length; i++) {
                 slides[i].style.display = 'block';
+                
             }
         }
     }
@@ -64,18 +67,17 @@ var mySwiper;
         less.addEventListener('click', function(evt) { 
             evt.preventDefault();
             
+            showLess();
             more.style.display = 'block';
             less.style.display = 'none';
-            showLess();
         })
     
         more.addEventListener('click', function(evt) { 
             evt.preventDefault();
             
+            showMore ();
             more.style.display = 'none';
             less.style.display = 'block';
-            showMore ();
         })
     }   
-
-    
+    showLessMore ();

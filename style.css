@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    margin:  auto;
+    margin: auto;
     background-color: #F2F2F2;
     min-width: 320px;
     max-width: 1120px;
@@ -66,7 +66,7 @@ body {
 .title {
     background: linear-gradient(90deg, #F2F2F2 1.39%, #FFFFFF 98.61%);
     border-top: 2px solid #D9FFF5;
-    margin-left: 16px;
+    
 }
 
 .title h1 {
@@ -76,15 +76,19 @@ body {
     letter-spacing: -0.2px;
     color: #7E7E82;
     text-transform: uppercase;
-    padding: 16px 16px 16px 0;
+    padding: 16px 16px 16px 16px;
     margin: 0;
 }
 
 .swiper-wrapper {
     margin: 16px;
+    list-style: none;
+    padding: 0;
+    
 }
 
 .swiper-slide {
+    width: 100%;
     position: relative;
     width: 240px;
     height: 72px;
@@ -101,22 +105,15 @@ body {
     left: 16px;
 }
 
-.swiper-slide__button {
+.swiper-slide__link {
     position: absolute;
-    height: 40px;
-    width: 40px;
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
-    padding: 0;
-    border: none;
-    background: inherit;
-    border-color: white;
-    outline: none;
+    cursor: pointer;  
 }
 
-.swiper-slide__button::before { 
+.swiper-slide__link::before { 
     content: url(./images/go.svg);
 }
 
@@ -180,7 +177,7 @@ margin-top: 24px;
 
 @media (min-width: 768px) {
     .title {
-        margin-left: 24px;
+        padding-left: 24px;
     }
     .swiper-wrapper {
         flex-wrap: wrap;
@@ -193,32 +190,44 @@ margin-top: 24px;
         margin-right: 24px;
         margin-bottom: 16px;
     }
+
+    .swiper-slide:nth-child(n + 7) {
+        display: none;
+    }
+
     .gradient {
         display: none;
     }
-    .swiper-slide-Samsung {
-    display: block;
-    }
+    .swiper-slide-Samsung,
     .swiper-slide-Apple {
         display: block;
-    }  
+    }
 
     .swiper-pagination {
         display:none;
     }
     .button-less {
         margin-top: 30px;
-        display: block;  
+        display: none;  
     }
     .button-more {
         margin-top: 8px;
+        display: block;
+    }
+}
+@media (min-width: 992px) {
+    .swiper-slide:nth-child(n + 7) {
+        display: block;
+    }
+
+    .swiper-slide:nth-child(n + 9) {
         display: none;
     }
 }
 
 @media (min-width: 1120px) {
     .title {
-        margin-left: 32px;
+        padding-left: 32px;
     }
     .swiper-wrapper {
         margin: 32px 32px 0px 32px;
@@ -230,8 +239,6 @@ margin-top: 24px;
     .button-more {
         margin-top: 8px;
     }
-
-   
 }
 
 
