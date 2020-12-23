@@ -76,12 +76,12 @@ body {
     letter-spacing: -0.2px;
     color: #7E7E82;
     text-transform: uppercase;
-    padding: 16px 16px 16px 16px;
+    padding: 16px;
     margin: 0;
 }
 
 .swiper-wrapper {
-    margin: 16px;
+    margin: 16px 0;
     list-style: none;
     padding: 0;
     
@@ -176,8 +176,8 @@ margin-top: 24px;
 
 
 @media (min-width: 768px) {
-    .title {
-        padding-left: 24px;
+    .title h1 {
+        padding: 16px 24px;
     }
     .swiper-wrapper {
         flex-wrap: wrap;

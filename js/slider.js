@@ -4,7 +4,8 @@ const slider = document.querySelector('.swiper-container');
  function mobileSlider() {
     if (window.innerWidth < 768 && slider.dataset.mobile === 'false') {
         mySwiper = new Swiper('.swiper-container', {
-            loop: true,
+            slidesOffsetBefore: 16,
+            slidesOffsetAfter: 16,
             slidesPerView: 'auto',
             spaceBetween: 16,
             pagination: {
